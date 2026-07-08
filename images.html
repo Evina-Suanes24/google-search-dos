@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Image Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+       
+        .nav-container {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: #000;
+            font-size: 13px;
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Layout */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 140px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        /* Google Logo Colors */
+        .logo {
+            font-size: 90px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            letter-spacing: -2px;
+        }
+        .g1 { color: #4285F4; }
+        .o1 { color: #EA4335; }
+        .y { color: #FBBC05; }
+        .g2 { color: #4285F4; }
+        .l { color: #34A853; }
+        .o2 { color: #EA4335; }
+        .sub-logo {
+            font-size: 16px;
+            color: #4285F4;
+            font-weight: normal;
+            display: block;
+            text-align: right;
+            margin-top: -25px;
+            margin-right: 10px;
+        }
+
+        /* Form and Centered Search Bar with Rounded Corners */
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .search-bar {
+            width: 90%;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            outline: none;
+            transition: box-shadow 0.2s;
+        }
+        .search-bar:hover, .search-bar:focus {
+            box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+            border-color: rgba(223,225,229,0);
+        }
+
+        /* Blue Button with White Text */
+        .btn-container {
+            margin-top: 25px;
+        }
+        .btn-blue {
+            background-color: #1a73e8;
+            border: 1px solid #1a73e8;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 11px 4px;
+            padding: 10px 16px;
+            cursor: pointer;
+        }
+        .btn-blue:hover {
+            background-color: #1557b0;
+            border-color: #1557b0;
+            box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-container">
+        <a class="nav-link" href="index.html">Google Search</a>
+    </div>
+
+    <div class="main-content">
+        <div class="logo">
+            <span class="g1">G</span><span class="o1">o</span><span class="y">o</span><span class="g2">g</span><span class="l">l</span><span class="o2">e</span>
+            <span class="sub-logo">images</span>
+        </div>
+
+        <form action="https://www.google.com/search">
+            <input type="hidden" name="tbm" value="isch">
+            
+            <input type="text" name="q" class="search-bar" required autocomplete="off">
+            
+            <div class="btn-container">
+                <input type="submit" value="Search Images" class="btn-blue">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
