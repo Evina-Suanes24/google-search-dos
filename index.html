@@ -19,18 +19,19 @@
         <h1 class="logo">Google</h1>
 
         <form action="https://www.google.com/search" method="GET">
-            <input
-                type="text"
-                name="q"
-                class="search-box"
-                placeholder="Search Google"
-                autocomplete="off"
-                required
-            >
-
-            <div class="buttons">
-                <input type="submit" value="Google Search">
-                <input type="submit" name="btnI" value="I'm Feeling Lucky">
+            <div class="search-box-wrapper">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 21L15.5 15.5M15.5 15.5C16.9061 14.0939 17.75 12.1499 17.75 10C17.75 5.71979 14.2802 2.25 10 2.25C5.71979 2.25 2.25 5.71979 2.25 10C2.25 14.2802 5.71979 17.75 10 17.75C12.1499 17.75 14.0939 16.9061 15.5 15.5Z" stroke="#9AA0A6" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <label for="search-input" class="visually-hidden" style="position:absolute; width:1px; height:1px; overflow:hidden;">Search Google</label>
+                <input
+                    id="search-input"
+                    type="text"
+                    name="q"
+                    class="search-box"
+                    placeholder="Search Google"
+                    required
+                >
             </div>
         </form>
     </div>
