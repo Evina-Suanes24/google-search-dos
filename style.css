@@ -112,6 +112,34 @@ body {
     border-color: transparent;
 }
 
+/* Buttons */
+.buttons {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.buttons input {
+    background: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    color: #3c4043;
+    padding: 11px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
+}
+
+.buttons input:hover {
+    border: 1px solid #dadce0;
+}
+
+.buttons input:active {
+    transform: translateY(1px);
+}
+
 /* Responsive */
 @media (max-width: 600px) {
     .logo {
