@@ -10,7 +10,7 @@
 
     <header class="navbar">
         <a href="index.html" class="logo">
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google">
         </a>
 
         <nav>
@@ -22,41 +22,82 @@
 
     <main class="container">
 
-        <h1>Advanced Search</h1>
+        <h1 class="title">Advanced Search</h1>
 
         <div class="heading">
-            <span>Find pages with...</span>
-            <span>To do this in the search box.</span>
+            <div class="left-heading">
+                Find pages with...
+            </div>
+
+            <div></div>
+
+            <div class="right-heading">
+                To do this in the search box.
+            </div>
         </div>
 
         <form action="https://www.google.com/search" method="GET">
 
             <div class="row">
-                <label>all these words:</label>
-                <input type="text" name="as_q">
-                <small>Type the important words.</small>
+                <label for="as_q">all these words:</label>
+
+                <input
+                    type="text"
+                    id="as_q"
+                    name="as_q">
+
+                <div class="help">
+                    Type the important words:
+                    <span>tri-color rat terrier</span>
+                </div>
             </div>
 
             <div class="row">
-                <label>this exact word or phrase:</label>
-                <input type="text" name="as_epq">
-                <small>Put exact words in quotes.</small>
+                <label for="as_epq">this exact word or phrase:</label>
+
+                <input
+                    type="text"
+                    id="as_epq"
+                    name="as_epq">
+
+                <div class="help">
+                    Put exact words in quotes:
+                    <span>"rat terrier"</span>
+                </div>
             </div>
 
             <div class="row">
-                <label>any of these words:</label>
-                <input type="text" name="as_oq">
-                <small>Separate words with OR.</small>
+                <label for="as_oq">any of these words:</label>
+
+                <input
+                    type="text"
+                    id="as_oq"
+                    name="as_oq">
+
+                <div class="help">
+                    Type OR between all the words you want:
+                    <span>miniature OR standard</span>
+                </div>
             </div>
 
             <div class="row">
-                <label>none of these words:</label>
-                <input type="text" name="as_eq">
-                <small>Exclude unwanted words.</small>
+                <label for="as_eq">none of these words:</label>
+
+                <input
+                    type="text"
+                    id="as_eq"
+                    name="as_eq">
+
+                <div class="help">
+                    Put a minus sign just before words you don't want:
+                    <span>-rodent, -"Jack Russell"</span>
+                </div>
             </div>
 
             <div class="button-area">
-                <button type="submit">Advanced Search</button>
+                <button type="submit">
+                    Advanced Search
+                </button>
             </div>
 
         </form>
