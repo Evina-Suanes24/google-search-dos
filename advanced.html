@@ -9,50 +9,99 @@
 <body>
 
     <header class="navbar">
-        <div class="logo">
-            <a href="index.html">
-                <span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span>
-            </a>
-        </div>
+        <a href="index.html" class="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google">
+        </a>
 
         <nav>
             <a href="index.html">Google Search</a>
         </nav>
     </header>
 
-    <div class="divider"></div>
+    <hr>
 
     <main class="container">
-        <h1>Advanced Search</h1>
-        <p class="subtitle">Find pages with...</p>
+
+        <h1 class="title">Advanced Search</h1>
+
+        <div class="heading">
+            <div class="left-heading">
+                Find pages with...
+            </div>
+
+            <div></div>
+
+            <div class="right-heading">
+                To do this in the search box.
+            </div>
+        </div>
 
         <form action="https://www.google.com/search" method="GET">
 
             <div class="row">
-                <label>All these words</label>
-                <input type="text" name="as_q">
+                <label for="as_q">all these words:</label>
+
+                <input
+                    type="text"
+                    id="as_q"
+                    name="as_q">
+
+                <div class="help">
+                    Type the important words:
+                    <span>tri-color rat terrier</span>
+                </div>
             </div>
 
             <div class="row">
-                <label>This exact word or phrase</label>
-                <input type="text" name="as_epq">
+                <label for="as_epq">this exact word or phrase:</label>
+
+                <input
+                    type="text"
+                    id="as_epq"
+                    name="as_epq">
+
+                <div class="help">
+                    Put exact words in quotes:
+                    <span>"rat terrier"</span>
+                </div>
             </div>
 
             <div class="row">
-                <label>Any of these words</label>
-                <input type="text" name="as_oq">
+                <label for="as_oq">any of these words:</label>
+
+                <input
+                    type="text"
+                    id="as_oq"
+                    name="as_oq">
+
+                <div class="help">
+                    Type OR between all the words you want:
+                    <span>miniature OR standard</span>
+                </div>
             </div>
 
             <div class="row">
-                <label>None of these words</label>
-                <input type="text" name="as_eq">
+                <label for="as_eq">none of these words:</label>
+
+                <input
+                    type="text"
+                    id="as_eq"
+                    name="as_eq">
+
+                <div class="help">
+                    Put a minus sign just before words you don't want:
+                    <span>-rodent, -"Jack Russell"</span>
+                </div>
             </div>
 
-            <div class="btn-row">
-                <button type="submit">Advanced Search</button>
+            <div class="button-area">
+                <button type="submit">
+                    Advanced Search
+                </button>
             </div>
 
         </form>
+
     </main>
 
 </body>
